@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ta">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -84,7 +84,7 @@
       overflow: hidden;
       margin: 20px;
       width: 300px;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
     }
 
@@ -93,6 +93,11 @@
       height: 200px;
       object-fit: cover;
       transition: transform 0.5s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
     .card:hover img {
@@ -133,41 +138,34 @@
   </header>
 
   <section class="content">
-    
-    <!-- 
-    <div class="card" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
-      <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/forest.jpg" alt="Forest" />
-      <div class="card-text">Forest 🦌</div>
-    </div>
-    <div class="card" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
-      <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/RETRO.jpg" alt="RETRO" />
-      <div class="card-text">RETRO </div>
-    </div>
-
-    -->
-    
-    <div class="card" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+    <div class="card">
       <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/house.jpg" alt="House" />
       <div class="card-text">Mountain 🛖</div>
-          <div class="card" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+    </div>
+
+    <div class="card">
       <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/sunny.jpg" alt="Sunny" />
       <div class="card-text">Rising sun ⛅️</div>
     </div>
-    <div class="card" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
+
+    <div class="card">
       <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/rainy.jpg" alt="Rainy" />
-      <div class="card-text">Rainy  🌦️ </div>
+      <div class="card-text">Rainy 🌦️</div>
     </div>
+
+    <!-- Optional extra cards -->
+    <!--
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/forest.jpg" alt="Forest" />
+      <div class="card-text">Forest 🦌</div>
+    </div>
+
+    <div class="card">
+      <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/RETRO.jpg" alt="RETRO" />
+      <div class="card-text">RETRO</div>
+    </div>
+    -->
   </section>
-
-  <script>
-    function hoverEffect(card) {
-      card.style.transform = 'scale(1.03)';
-    }
-
-    function removeEffect(card) {
-      card.style.transform = 'scale(1)';
-    }
-  </script>
 
 </body>
 </html>

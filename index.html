@@ -134,6 +134,7 @@
     <div class="hero-text">
       <h1>உடுமலைப்பேட்டை</h1>
       <p>உங்களை அன்புடன் வரவேர்கிறது</p>
+      <p id="api-message">செய்தியை ஏற்றுகிறது...</p>
     </div>
   </header>
 
@@ -152,20 +153,19 @@
       <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/rainy.jpg" alt="Rainy" />
       <div class="card-text">Rainy 🌦️</div>
     </div>
-
-    <!-- Optional extra cards -->
-    <!--
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/forest.jpg" alt="Forest" />
-      <div class="card-text">Forest 🦌</div>
-    </div>
-
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/RETRO.jpg" alt="RETRO" />
-      <div class="card-text">RETRO</div>
-    </div>
-    -->
   </section>
+
+  <script>
+    fetch("https://app-service-ezgkgycdfbh3a6es.centralindia-01.azurewebsites.net/api/hello")
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("api-message").textContent = data.message;
+      })
+      .catch(error => {
+        console.error("API fetch failed:", error);
+        document.getElementById("api-message").textContent = "சேவையகத்தை அணுக முடியவில்லை.";
+      });
+  </script>
 
 </body>
 </html>

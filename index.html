@@ -1,171 +1,108 @@
 <!DOCTYPE html>
-<html lang="ta">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>உடுமலைப்பேட்டை</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      font-family: 'Segoe UI', sans-serif;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      background-image: url('https://raw.githubusercontent.com/karthikprasath21/palkova/main/forest.jpg');
-      height: 100vh;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: white;
-      position: relative;
-      text-align: center;
-    }
-
-    nav {
-      position: absolute;
-      top: 20px;
-      width: 100%;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffdd57;
-    }
-
-    .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .hero-text h1 {
-      font-size: 3.5rem;
-      margin-bottom: 10px;
-    }
-
-    .hero-text p {
-      font-size: 1.2rem;
-    }
-
-    .content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 50px 20px;
-      background: #f4f4f4;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-      overflow: hidden;
-      margin: 20px;
-      width: 300px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .card:hover img {
-      transform: scale(1.1);
-    }
-
-    .card-text {
-      padding: 15px;
-      text-align: center;
-      font-size: 1.1rem;
-    }
-
-    @media (max-width: 768px) {
-      .hero-text h1 {
-        font-size: 2rem;
-      }
-
-      .card {
-        width: 90%;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karthik Prasath - Resume</title>
+<style>
+  body {
+    font-family: 'Calibri', Arial, sans-serif;
+    color: #000;
+    background: #fff;
+    margin: 40px auto;
+    max-width: 850px;
+    line-height: 1.5;
+  }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+  .contact {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  .section {
+    margin-top: 25px;
+  }
+  h2 {
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 5px 0;
+    font-size: 15px;
+  }
+  ul {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  li {
+    margin-bottom: 4px;
+  }
+  .subhead {
+    font-weight: bold;
+  }
+  .muted {
+    font-style: italic;
+  }
+  a {
+    color: #0000EE;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
+  <h1>Karthik Prasath</h1>
+  <div class="contact">
+    8110028130 &nbsp; | &nbsp; <a href="mailto:Karthikprasath1024@gmail.com">Karthikprasath1024@gmail.com</a> &nbsp; | &nbsp; LinkedIn: <a href="https://www.linkedin.com/in/karthikprasath-r" target="_blank">karthikprasath-r</a>
+  </div>
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">நேற்று</a></li>
-        <li><a href="#">இன்று</a></li>
-        <li><a href="#">நாளை</a></li>
-      </ul>
-    </nav>
-    <div class="hero-text">
-      <h1>உடுமலைப்பேட்டை</h1>
-      <p>உங்களை அன்புடன் வரவேர்கிறது</p>
-      <p id="api-message">செய்தியை ஏற்றுகிறது...</p>
-    </div>
-  </header>
+  <p>Azure Cloud professional with 4 years of experience in designing and managing cloud solutions on Microsoft Azure. Skilled in deploying PaaS & IaaS services like VMs, App Services, and Storage Accounts. Expertise in cloud operations, team leadership, and system performance optimization. Dedicated to staying updated with the latest Azure technologies for innovative solutions.</p>
 
-  <section class="content">
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/house.jpg" alt="House" />
-      <div class="card-text">Mountain 🛖</div>
-    </div>
+  <div class="section">
+    <h2>Education</h2>
+    <p><strong>B.E. in Computer Science and Engineering</strong>, PA College of Engineering and Technology (2017–2021)</p>
+    <p>I have secured a CGPA of 7.73 with relevant coursework in Data Structures and Algorithm, Operating Systems, Database Management Systems, and Object-Oriented Programming.</p>
+  </div>
 
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/sunny.jpg" alt="Sunny" />
-      <div class="card-text">Rising sun ⛅️</div>
-    </div>
+  <div class="section">
+    <h2>Experience</h2>
 
-    <div class="card">
-      <img src="https://raw.githubusercontent.com/karthikprasath21/palkova/main/rainy.jpg" alt="Rainy" />
-      <div class="card-text">Rainy 🌦️</div>
-    </div>
-  </section>
+    <p class="subhead">Engineer – Cloud & Infra Management, LTIMindtree <span class="muted">(Oct 2021 – Feb 2025)</span></p>
+    <ul>
+      <li>Bringing extensive experience in building, deploying, configuring, and maintaining Azure services.</li>
+      <li>Skilled in incident and problem management, developing tools to deploy, manage, monitor, and troubleshoot cloud-based systems both on-premises and in the cloud.</li>
+      <li>Proficient in generating reports and analyzing usage, capacity, and performance to optimize storage, backup, and security.</li>
+    </ul>
 
-  <script>
-    fetch("https://app-service-ezgkgycdfbh3a6es.centralindia-01.azurewebsites.net/api/hello")
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById("api-message").textContent = data.message;
-      })
-      .catch(error => {
-        console.error("API fetch failed:", error);
-        document.getElementById("api-message").textContent = "சேவையகத்தை அணுக முடியவில்லை.";
-      });
-  </script>
+    <p class="subhead">Cloud Engineer, Outworks <span class="muted">(Feb 2025 – Oct 2025)</span></p>
+    <ul>
+      <li>Migration of services from on-premises infrastructure to the Microsoft Azure Cloud, ensuring scalability, high availability, and seamless integration with cloud-native solutions.</li>
+      <li>Provisioned and managed Azure infrastructure using Infrastructure as Code (IaC) tools such as Terraform enabling automated, consistent, and version-controlled deployments.</li>
+      <li>Automated cloud resource workflows based on demand, leveraging Azure-native Automation to optimize performance, cost-efficiency, and operational responsiveness.</li>
+      <li>Managed Azure subscriptions budgeting, including role-based access control (RBAC), cost monitoring, and billing to ensure compliance, security, and cost-efficiency across cloud environments.</li>
+    </ul>
+  </div>
 
+  <div class="section">
+    <h2>Skills</h2>
+    <p><strong>Cloud Automation:</strong> Proficient in automating cloud systems using Linux, Kubernetes, Bash, Docker, Terraform, and Ansible.</p>
+    <p><strong>Azure Expertise:</strong> Skilled in DevOps & cloud services like VM, App Service, AKS, Storage Accounts, Key Vault, Application Gateway, Load Balancer, VNET, NSG, DNS, WAF, Entra Security, backup, and disaster recovery.</p>
+    <p><strong>Infrastructure as Code:</strong> Experienced in using Terraform to create, deploy, and manage resources.</p>
+    <p><strong>Automation and Monitoring:</strong> Expertise in automating deployment, monitoring, logging, and alerting with Azure Monitor. Skilled in container orchestration and managing IAM roles for secure access control.</p>
+  </div>
+
+  <div class="section">
+    <h2>Certification</h2>
+    <p>Certified as a Microsoft Azure Administrator Associate (<a href="https://learn.microsoft.com/en-us/users/karthikprasath-0091/credentials/f70a3315293c8d19?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">Verification</a>)</p>
+  </div>
 </body>
 </html>
